@@ -312,6 +312,12 @@ body {
   .boxnav__logo {
     flex-basis: 5%;
   }
+
+  .boxnav__nav{
+    margin-left: 5rem;
+  }
+
+
 }
 
 /** ============================================================          Media Querie 1024px
