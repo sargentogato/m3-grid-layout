@@ -58,7 +58,7 @@ body {
 /** nav - Header
 ==================================
 */
-.box-nav-header {
+.boxNavHeader {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
@@ -77,7 +77,7 @@ body {
 }
 
 /** nav */
-.boxnav {
+.boxNav {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -85,16 +85,16 @@ body {
   flex-wrap: nowrap;
 }
 
-.boxnav__logo {
+.boxNavLogo {
   flex-basis: 15%;
 }
 
-.boxnav__logo img {
+.boxNavLogo img {
   width: 100%;
   height: auto;
 }
 
-.boxnav__nav {
+.boxNavMenu {
   flex-basis: 80%;
   flex-grow: 1;
   flex-shrink: 1;
@@ -118,28 +118,28 @@ body {
   font-size: 1.5vh;
 }
 
-.nav__item {
+.navItem {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav__item > a {
+.navItem > a {
   display: block;
 }
 
-.nav__link:hover {
+.navLink:hover {
   transform: scale(1.2);
   color: #f73f52;
   font-weight: 600;
 }
 
-.nav__link span {
+.navLink span {
   font-size: 1.5vh;
   padding-left: 0.1rem;
 }
 
-.boxnav__socialMedia {
+.boxNavSocialMedia {
   flex-basis: 20%;
   flex-grow: 1;
   flex-shrink: 1;
@@ -162,14 +162,14 @@ body {
   align-items: center;
 }
 
-.header__item {
+.headerItem {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 85%;
 }
 
-.header__title {
+.headerTitle {
   color: rgba(236, 88, 175, 0.7);
   text-align: center;
   font-size: var(--header-title-mobile);
@@ -194,7 +194,7 @@ body {
   background-color: #f3f3f3;
 }
 
-.section__articleBox {
+.sectionArticleBox {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
@@ -205,15 +205,15 @@ body {
   justify-content: center;
 }
 
-.articleBox__post:nth-child(odd) {
+.articleBoxPost:nth-child(odd) {
   box-shadow: var(--shadow-article-post-L);
 }
 
-.articleBox__post:nth-child(even) {
+.articleBoxPost:nth-child(even) {
   box-shadow: var(--shadow-article-post-R);
 }
 
-.articleBox__post {
+.articleBoxPost {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 40%;
@@ -227,28 +227,28 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* .articleBox__post img {
+/* .articleBoxPost img {
   width: 100%;
   height: auto;
 } */
 
-.article__image-box {
+.articleImageBox {
   position: relative;
   bottom: 0;
 }
 
-.article__image-box > img {
+.articleImageBox > img {
   height: 7em;
 }
 
-.article__image-footnote {
+.articleImageFootnote {
   position: absolute;
   color: white;
   bottom: 0.1rem;
   height: auto;
 }
 
-.article__title {
+.articleTitle {
   height: 2.2rem;
   z-index: 1;
   margin-top: -0.4rem;
@@ -257,11 +257,11 @@ body {
   line-height: 3.3rem;
 }
 
-.article__text {
+.articleText {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
-.article__text,
+.articleText,
 .read-more {
   -webkit-margin-before: 1rem;
   margin-block-start: 1rem;
@@ -279,7 +279,7 @@ body {
   text-align: center;
 }
 
-.section__aside {
+.sectionAside {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
@@ -289,7 +289,7 @@ body {
   gap: 1rem;
 }
 
-.aside__item {
+.asideItem {
   background-color: #f2a154;
   text-align: center;
 }
@@ -311,7 +311,7 @@ body {
 ===============================================================
 */
 @media screen and (min-width: 600px) {
-  .article__image-box > img {
+  .articleImageBox > img {
     height: 12rem;
   }
 }
@@ -323,11 +323,11 @@ body {
   /** nav - Header
   ==================================
   */
-  .boxnav__logo {
+  .boxNavLogo {
     flex-basis: 5%;
   }
 
-  .boxnav__nav {
+  .boxNavMenu {
     margin-left: 5rem;
   }
 
@@ -335,7 +335,7 @@ body {
     height: 13rem;
   }
 
-  .article__image-box > img {
+  .articleImageBox > img {
     height: 13rem;
   }
 }
@@ -345,18 +345,18 @@ body {
 */
 
 @media screen and (min-width: 1024px) {
-  .boxnav__logo {
+  .boxNavLogo {
     flex-basis: 3%;
     margin-left: var(--margin-left-logo-1024);
   }
 
-  .boxnav__nav {
+  .boxNavMenu {
     gap: 1rem;
     justify-content: flex-start;
     align-items: flex-end;
   }
 
-  .boxnav__socialMedia {
+  .boxNavSocialMedia {
     flex-basis: auto;
     align-items: center;
     flex-direction: row;
@@ -377,15 +377,15 @@ body {
     flex-direction: row;
   }
 
-  .section__articleBox {
+  .sectionArticleBox {
     flex-basis: 70%;
   }
 
-  .section__aside {
+  .sectionAside {
     flex-basis: 30%;
   }
 
-  .article__image-box > img {
+  .articleImageBox > img {
     height: 15rem;
   }
 }
@@ -398,7 +398,7 @@ body {
     padding: 12%;
   }
 
-  .article__image-box > img {
+  .articleImageBox > img {
     height: 19rem;
   }
 }
